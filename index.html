@@ -87,6 +87,7 @@
 
 
 <style>
+	 
 	nav{
 		overflow: hidden!important;
 	}
@@ -96,39 +97,44 @@
 		top: 0!important;
 		width: 100%!important;
 	}
+
 </style>
 
-	<nav class="fh5co-nav" role="navigation">
-		<div class="top-menu">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-2">
-						<div id="fh5co-logo"><a href="index.html"><img src="images/logo.jpg" class="logo">&nbsp;&nbsp;<a
-									href="">Invest Education</a> </div>
-					</div>
-					<div class="col-xs-10 text-right menu-1">
-						<ul>
-							<li class="active"><a href="index.html"><b><span>Bosh sahifa</span></b></a></li>
-							<li><a href="courses.html"><b><span>Kurslar</span></b></a></li>
-							<li><a href="teacher.html"><b><span>O'qituvchilar</span></b></a></li>
-							<li><a href="about.html"><b><span>Biz haqimizda</span></b></a></li>
-							<li><a href="pricing.html"><b><span>Kurs narxlari</span></b></a></li>
-							<li><a href="pricing.html"><b><span>Yangiliklar</span></b></a></li>
-							
-							<li><a href="contact.html"><b><span>Bog'lanish</span></b></a></li>
 
-						</ul>
-					</div>
+<!-- Responsive uchun asosiy muammo nuqtalari -->
+
+<div id="page">
+<nav class="fh5co-nav" role="navigation">
+	<div class="top-menu">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-2">
+					<div id="fh5co-logo"><a href="index.html"><img src="images/logo.jpg"
+								class="logo">&nbsp;&nbsp;<a href="">Invest Education</a> </div>
 				</div>
+				<div class="col-xs-10 text-right menu-1">
+					<ul>
+						<li class="active"><a href="index.html"><b><span>Bosh sahifa</span></b></a></li>
+						<li><a href="courses.html"><b><span>Kurslar</span></b></a></li>
+						<li><a href="teacher.html"><b><span>O'qituvchilar</span></b></a></li>
+						<li><a href="about.html"><b><span>Biz haqimizda</span></b></a></li>
+						<li><a href="pricing.html"><b><span>Kurs narxlari</span></b></a></li>
+						<li><a href="blog.html"><b><span>Yangiliklar</span></b></a></li>
 
+						<li><a href="contact.html"><b><span>Bog'lanish</span></b></a></li>
+
+					</ul>
+				</div>
 			</div>
+
 		</div>
-	</nav>
+	</div>
+</nav>
 
 	<aside id="fh5co-hero">
 		<div class="flexslider">
 			<ul class="slides">
-				<li style="background-image: url(images/Invest\ Edu\ asosiy.jpg);background-attachment: fixed;background-size: cover;background-repeat: no-repeat;">
+				<li class="glavniy" style="background-image: url(images/Invest\ Edu\ asosiy.jpg);background-attachment: fixed;background-size: cover;background-repeat: no-repeat;">
 					<div class="overlay-gradient"></div>
 					<div class="container">
 						<div class="row">
@@ -142,14 +148,27 @@
 						</div>
 					</div>
 				</li>
-				<li style="background-image: url(images/img_bg_2.jpg);">
+				<style>
+					@media screen and (max-width: 600px) {
+						.slider-text-inner .respons {
+						  font-size: 5px!important;
+						}
+						.slides .glavniy{
+							background-color: red;
+						}
+					  } 
+				</style>
+				<li style="background-color: rgb(65, 65, 222);">
 					<div class="overlay-gradient"></div>
 					<div class="container">
 						<div class="row">
-							<div class="col-md-8 col-md-offset-2 text-center slider-text">
+							
+							<div class="col-md-6 text-center slider-text">
 								<div class="slider-text-inner">
-									<h1><b><span style="color: yellow;">Invest Education</span></b> o'quv markazi rasmiy platformasi</h1>
-									
+									<h1 class="repons"><b><span style="color: yellow;">Invest Education</span></b> o'quv markazi rasmiy platformasi</h1>				
+								</div>
+								<div class="slider-text-inner">
+									<img src="./images/Invest.jpg" alt="">				
 								</div>
 							</div>
 						</div>
@@ -680,7 +699,7 @@
 		</div>
 	</footer>
 	</div>
-
+</div>
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
